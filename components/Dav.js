@@ -6,7 +6,7 @@ import React, { useRef } from "react";
 import { useGLTF } from "@react-three/drei";
 
 export function Dav(props) {
-  const { nodes, materials } = useGLTF("/5D ANT FER.gltf");
+  const { nodes, materials } = useGLTF("/6D ANT FER.gltf");
   return (
     <group {...props} dispose={null}>
       <mesh
@@ -14,21 +14,21 @@ export function Dav(props) {
         receiveShadow
         geometry={nodes.Plano002.geometry}
         material={materials["Material.001"]}
-        position={[0.31, 0.14, -0.07]}
+        position={[0.31, 0.13, -0.07]}
       />
       <mesh
         castShadow
         receiveShadow
         geometry={nodes.Plano003.geometry}
         material={materials["Material.001"]}
-        position={[0.31, 0.14, -0.07]}
+        position={[0.31, 0.13, -0.07]}
       />
       <mesh
         castShadow
         receiveShadow
         geometry={nodes.Plano004.geometry}
         material={materials["Material.001"]}
-        position={[0.24, 0.14, -0.07]}
+        position={[0.24, 0.13, -0.07]}
       />
       <mesh
         castShadow
@@ -74,7 +74,7 @@ export function Dav(props) {
           material={materials.TQ_ARD_edge}
         />
       </group>
-      <group position={[0.27, 0.07, -0.13]} rotation={[Math.PI / 2, 0, 0]}>
+      <group position={[0.27, 0.07, 0.09]} rotation={[Math.PI / 2, 0, Math.PI]}>
         <mesh
           castShadow
           receiveShadow
@@ -98,4 +98,4 @@ export function Dav(props) {
   );
 }
 
-useGLTF.preload("/5D ANT FER.gltf");
+useGLTF.preload("/6D ANT FER.gltf");
